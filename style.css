@@ -184,14 +184,13 @@ form {
 }
 
 .fb-btn-login {
-  width: 360px;
+  min-width: 300px;
+  max-width: 360px;
   height: 47px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin: .6rem auto;
-  text-decoration: none;
-  color:#fff;
   background-color: #166FE5;
   border-radius: 5px;
 }
@@ -219,8 +218,12 @@ form {
   font-size: 1.1rem;
 }
 
+.fb-recuperar-mobile {
+  display: none;
+}
+
 .fb-separator {
-  width: 360px;
+  width: 90%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -230,7 +233,8 @@ form {
 }
 
 .fb-create-new {
-  width: 200px;
+  max-width: 200px;
+  width: 70%;
   height: 47px;
   display: flex;
   justify-content: flex-start;
@@ -260,4 +264,113 @@ form {
 
 .link-bold:hover {
   text-decoration: underline;
+}
+
+/* media queries - tratar responsividade*/
+
+@media (max-width: 1024px) /*tablet*/{
+  .fb-wrapper {
+    width: 90%;
+    
+  }
+
+  .fb-btn-login {
+    min-width: 100px;
+    max-width: 320px;
+  }
+
+  .fb-create-new {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 650px) /*celular*/ { 
+  html,body{
+    width: 100%;
+    height:100%;
+    background-color: #fff;
+  } 
+
+  .fb-wrapper {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  fb.fb-recent-login {
+    width: 100%;
+  }
+
+  .fb-logo {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+  }
+
+  .fb-logo img {
+    height: 4rem;
+    margin: auto;
+  }
+
+  .fb-title {
+    display: none;
+  }
+
+  .fb-subtitle {
+    display: none;
+  }
+
+  .fb-profiles {
+    display: none;
+  }
+
+  .fb-login {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .fb-login-form {
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .fb-input input {
+    background-color: #F5F6F7;
+  }
+
+  .fb-btn-login {
+    min-width: 100px;
+    max-width: 360px;
+  }
+
+  .fb-create-page {
+    display: none;
+  }
+
+  .fb-separator {
+    margin-top: 2rem;
+  }
+
+  .fb-create-new {
+    max-width: 130px;
+  }
+
+  .fb-recuperar {
+    display: none;
+  }
+
+  .fb-recuperar-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+  padding: .5rem;
+}
+
+.fb-recuperar-mobile a {
+  margin: auto;
+  text-decoration: none;
+  color: gray;
+  font-size: 1rem;
+}
 }
