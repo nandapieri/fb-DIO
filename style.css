@@ -1,0 +1,134 @@
+/**resetando alguns valores - define padrões para todo o site*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color:#F0F2F5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.fb-wrapper {
+  /*dividindo a tela em 2 colunas*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 90vh;
+}
+
+.fb-recent-login {
+  align-content: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.fb-logo {
+  padding: 8px 0 16px 0;
+  width: 100%;
+  display: flex;
+}
+
+.fb-logo img {
+  margin: -20px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.fb-title {
+  display: block;
+}
+
+.fb-title p{
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-size: 1.9rem;
+  font-weight: normal;
+  line-height: 32px;
+}
+
+.fb-subtitle {
+  padding-bottom: 12px;
+  display: block;
+}
+
+.fb-subtitle p{
+  color: #606770;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.fb-profiles {
+    color: #1c1e21;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.fb-profile-photo {
+  background: #fff;
+  height: 15.5rem;
+  width: 12rem;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+}
+
+.fb-photo {
+  background-color: #F5F6F7;
+  height: 80%;
+  display: flex;
+  align-items: top;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.photo {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.fb-add-btn {
+  display: block;
+  margin: auto;
+  width: 30%;      
+}
+
+.fb-profile-name {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+  text-decoration: none;
+  color:#606770;
+}
+
+.fb-profile-name-blue {
+  color: #1877f2;
+}
+
+.fb-profile-name p {
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
